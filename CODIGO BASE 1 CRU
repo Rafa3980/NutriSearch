@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 28px;
+}
+
+.header {
+  display: flex; /* Use flexbox para dispor os elementos horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.header img {
+  margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.header-text {
+  text-align: right; /* Alinha o texto à direita */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="img_chania.jpg" alt="Flowers in Chania" width="400" height="700"> 
+
+  <div class="header-text">
+    <h2>NUTRISEARCH</h2>
+    <p>Somos seu guia confiável para restaurantes adaptados às suas restrições alimentares. Descubra uma variedade de opções deliciosas e seguras para todos os gostos e necessidades dietéticas. Com nosso mapa interativo e recursos úteis, encontrar o local perfeito para suas refeições nunca foi tão fácil. Explore agora e desfrute de uma experiência gastronômica sem preocupações!</p>
+  </div> <!-- Closing tag fixed here -->
+
+</div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<h3>Sticky Navigation Bar Example</h3>
+<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
+<p><strong>Note:</strong> Internet Explorer does not support sticky positioning and Safari requires a -webkit- prefix.</p>
+<!-- Mais conteúdo -->
+
+</body>
+</html>
