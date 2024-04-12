@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-5wZ3z4F3dfv4zYEb4U6GC8ZsPLseN8KtByjTGB5vbrAEII9bX+qp6Ivz2xWA+y8H" crossorigin="anonymous">
+    <link rel="stylesheet" href="sstyle2.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>NutriSearch</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-info">
+                <img src="comidasaudavel.jpg" alt="Comida Saudável" width="400" height="250">
+                <div class="header-text">
+                    <h2>NUTRISEARCH</h2>
+                    <p>Somos seu guia confiável para restaurantes adaptados às suas restrições alimentares. Descubra uma variedade de opções deliciosas e seguras para todos os gostos e necessidades dietéticas. Com nosso mapa interativo e recursos úteis, encontrar o local perfeito para suas refeições nunca foi tão fácil. Explore agora e desfrute de uma experiência gastronômica sem preocupações!</p>
+                    <button class="header-button" id="map-button">Ir para o Mapa</button>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <!-- Adicione outros ícones de redes sociais conforme necessário -->
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="content hidden" id="map-section">
+        <h3>Sticky Navigation Bar Example</h3>
+        <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
+        <p><strong>Note:</strong> Internet Explorer does not support sticky positioning and Safari requires a -webkit- prefix.</p>
+        <!-- Mais conteúdo -->
+    </section>
+
+    <script>
+        document.getElementById("map-button").addEventListener("click", function() {
+            document.getElementById("map-section").classList.remove("hidden");
+        });
+    </script>
+</body>
+</html>
